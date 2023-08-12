@@ -18,6 +18,7 @@ import { Input } from '@/components/ui/input';
 import AlertModal from '@/components/modals/AlertModal';
 import ApiAlert from '@/components/ui/ApiAlert';
 import { useOrigin } from '@/hooks/use-origin';
+import ImageUpload from '@/components/ui/ImageUpload';
 
 const formSchema = z.object({
   label: z.string().min(1),
@@ -107,6 +108,24 @@ const BillboardForm: React.FC<BillboardFormProps> = ({ initialData }) => {
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8 w-full'
         >
+          <FormField
+            control={form.control}
+            name='imageUrl'
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Background imge</FormLabel>
+                <FormControl>
+                  <ImageUpload
+                    value={field.value ? [field.value] : []}
+                    disabled={loading}
+                    onChange={(url) => field.onChange(url)}
+                    onRemove={() => field.onChange("")}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
           <div className='grid grid-cols-3 gap-8'>
             <FormField
               control={form.control}
