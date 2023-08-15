@@ -54,6 +54,9 @@ export async function PATCH(
     }
 
     const category = await prismadb.category.updateMany({
+      where: {
+        id: params.categoryId,
+      },
       data: {
         name,
         billboardId,

@@ -49,7 +49,7 @@ export async function POST(
 
   } catch (error) {
     console.log("[BILLBOARDS_POST]", error);
-    return new NextResponse("Internal d d d d  Error", { status: 500 })
+    return new NextResponse("Internal Error", { status: 500 })
   }
 }
 export async function GET(
@@ -66,6 +66,6 @@ export async function GET(
     return NextResponse.json(billboard);
   } catch (error) {
     console.log("[BILLBOARDS_GET]", error);
-    return new NextResponse("Internal d d d d  Error", { status: 500 })
+    return new NextResponse("Internal Error", { status: 500 })
   }
 }
