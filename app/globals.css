@@ -82,3 +82,17 @@ body,
 		@apply bg-background text-foreground;
 	}
 }
+
+.unique-background {
+	background: linear-gradient(
+		125deg,
+		#ecfcff 0%,
+		#ecfcff 40%,
+		#b2fcff calc(40% + 1px),
+		#b2fcff 60%,
+		#5edfff calc(60% + 1px),
+		#5edfff 72%,
+		#3e64ff calc(72% + 1px),
+		#3e64ff 100%
+	);
+}
