@@ -23,7 +23,7 @@ export const columns: ColumnDef<ProductColumn>[] = [
     header: "Name",
   },
   {
-    accessorKey: "isArcived",
+    accessorKey: "isArchived",
     header: "Archived",
   },
   {
