@@ -44,4 +44,4 @@ const OrdersPage = async ({ params }: { params: { storeId: string } }) => {
   )
 }
 
-export default OrderColumn
+export default OrdersPage
