@@ -4,13 +4,6 @@ import { NextResponse } from "next/server"
 
 import { stripe } from "@/lib/stripe"
 import prismadb from "@/lib/prismadb"
-import { Readable } from "stream"
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
 
 
 export async function POST(req: Request) {
