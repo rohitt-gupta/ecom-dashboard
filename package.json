@@ -35,6 +35,7 @@
     "lucide-react": "^0.263.1",
     "next": "13.4.12",
     "next-cloudinary": "^4.18.0",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.27",
     "raw-body": "^2.5.2",
     "react": "18.2.0",
