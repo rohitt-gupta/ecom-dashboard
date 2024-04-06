@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ # Ecommerce Dashboard
 
-## Getting Started
+ ## Introduction
+ The Ecommerce Dashboard is a comprehensive web application designed to provide store owners with a detailed overview of their online store's performance. It was created to address the need for a centralized platform where business metrics such as sales, revenue, and stock levels can be monitored efficiently. This project aims to empower store owners to make data-driven decisions to enhance their business operations.
 
-First, run the development server:
+ ## Problem Statement
+ Many ecommerce store owners struggle with scattered data sources and lack a unified view of their store's performance. This challenge makes it difficult to track progress, identify trends, and make informed decisions. The Ecommerce Dashboard addresses this problem by aggregating key performance indicators in a user-friendly interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+ ## Features
+ - **Real-time Analytics:** View up-to-date metrics on sales, revenue, and customer engagement.
+ - **Inventory Management:** Monitor stock levels and receive alerts for low-stock items.
+ - **Revenue Graphs:** Visualize sales trends over time to identify peak periods.
+ - **Customizable Widgets:** Tailor the dashboard to display the most relevant metrics.
+ - **Responsive Design:** Access the dashboard on any device, ensuring you're always informed.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ ## Technologies Used
+ - **Frontend:** React, Next.js, Tailwind CSS
+ - **Backend:** Node.js, Prisma, MySQL
+ - **Authentication** Clerk
+ - **Payment Gateway** Stripe
+ - **Libraries & Tools:** Shadcn ui which under the hood uses Recharts, radix-ui etc , Vercel for deployment.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ ## Installation
+ 1. Clone the repository:
+    ```bash
+    git clone https://github.com/rohitt-gupta/ecom-dashboard.git
+    ```
+ 2. Install dependencies:
+    ```bash
+    cd ecom-dashboard
+    npm install
+    ```
+ 3. Set up the environment variables by creating a `.env` file based on the `.env.example`.
+ 4. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ ## Usage
+ To view the dashboard, navigate to `http://localhost:3000` in your browser. Here are some common tasks:
+ - **Viewing Sales Data:** Click on the 'Sales' tab to see current sales figures.
+ - **Managing Inventory:** Access the 'Inventory' section to update stock levels.
+ - **Customizing the Dashboard:** Use the settings menu to select which widgets to display.
 
-## Learn More
+ ## Contributing
+ Contributions are welcome! If you'd like to help improve the Ecommerce Dashboard, please follow these steps:
+ 1. Fork the repository.
+ 2. Create a new branch (`git checkout -b feature/AmazingFeature`).
+ 3. Make your changes.
+ 4. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+ 5. Push to the branch (`git push origin feature/AmazingFeature`).
+ 6. Open a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+ Please report bugs and suggest enhancements by opening issues on the GitHub repository.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ ## Contact
+ For any inquiries or further information, please reach out to us at:
+ - Email: pta.rohit28@gmail.com
+ - Twitter: [@whyrohitwhy](https://twitter.com/whyrohitwhy)
+ - Project Website: [ecomdashboard.com](ecom-dashboard-five.vercel.app)
